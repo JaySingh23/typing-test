@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    background: #141221;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.header{
+    color: white;
+    position: absolute;
+    left: 10%;
+    top: 15%;
+}
+
+.wrapper{
+    width: 50%;
+    position: relative;
+    top: 30%;
+    left: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.wpm{
+    display: flex;
+    flex-direction: column;
+}
+
+.time{
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    color: #868A95;
+}
+
+.quote{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 20px 110px;
+    color: rgb(100, 97, 97);
+}
+
+textarea{
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    padding: 20px 110px;
+    border-radius: 5px;
+}
+
+.restart{
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    color: #FC76D9;
+}
+
+.selected{
+    color: #FC76D9;
+    opacity: 0.7;
+}
+
+kbd{
+    border: 1px solid #FC76D9;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.correct_char {
+    color: white;
+}
+
+.incorrect_char {
+    color: rgb(205, 52, 78);
+}

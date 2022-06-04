@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Typing test</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Typing Test</h2>
+        </div>
+        <div class="wrapper">
+            <div class="wpm">
+                <div id="curr_wpm" style="margin-left: 12px;">0</div>
+                <div id="text">wpm</div>
+            </div>
+            <div class="time">
+                <div class="selected" id="curr_time" onclick="timeChosen()
+                ">30</div>
+                <div  id="curr_time2" onclick="timeChosen()">60</div>
+            </div>
+        </div>
+
+        <div class="quote">
+            Click below to start the game
+        </div>
+        <textarea class = "input_area" id="typing_area" placeholder="start typing here..." onfocus="startGame()"></textarea>
+        <div class="restart">
+            <h4>Hit <kbd>esc</kbd> to restart</h4>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
